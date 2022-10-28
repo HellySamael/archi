@@ -5,8 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.*
 import com.github.samael.business.core.Pet
 
-import com.github.samael.ui.IPetUi
-import com.github.samael.ui.SingletonEnvironmentContext
+import com.github.samael.business.core.SingletonEnvironmentContext
 import spark.Spark.*
 
 class PetSparkUi : IPetUi<Any> {

@@ -1,4 +1,4 @@
-package com.github.samael.ui
+package com.github.samael.business.core
 
 import com.github.samael.business.IPetDomain
 
@@ -13,7 +13,7 @@ class SingletonEnvironmentContext{
         }
 
         fun setPetDomain(petDomain: IPetDomain){
-            SingletonEnvironmentContext.PET_DOMAIN=petDomain
+            PET_DOMAIN =petDomain
         }
     }
 

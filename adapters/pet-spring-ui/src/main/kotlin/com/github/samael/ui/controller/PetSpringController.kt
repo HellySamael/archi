@@ -3,7 +3,7 @@ package com.github.samael.ui.controller
 import com.github.samael.business.core.Pet
 import com.github.samael.ui.IPetUi
 import com.github.samael.ui.PetSpringApplication
-import com.github.samael.ui.SingletonEnvironmentContext
+import com.github.samael.business.core.SingletonEnvironmentContext
 import org.springframework.boot.runApplication
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
