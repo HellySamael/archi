@@ -10,11 +10,7 @@ import spark.Spark.*
 
 class PetSparkUi : IPetUi<Any> {
 
-
-    private val objectMapper: ObjectMapper
-    init {
-        this.objectMapper  = jacksonObjectMapper()
-    }
+    private val objectMapper: ObjectMapper = jacksonObjectMapper()
 
     fun start(){
         port(8080)

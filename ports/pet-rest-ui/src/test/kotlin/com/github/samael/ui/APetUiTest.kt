@@ -22,6 +22,8 @@ abstract class APetUiTest<T> {
 
     abstract fun getSUT(petDomain: IPetDomain): IPetUi<T>
 
+
+
     val mockDomain:IPetDomain = mock()
     lateinit var petClient:IPetClient
 
@@ -33,7 +35,9 @@ abstract class APetUiTest<T> {
     @Before
     fun beforeTests(){
         getSUT(mockDomain)
-        petClient = Feign.builder().encoder(JacksonEncoder()).decoder(JacksonDecoder()).target(IPetClient::class.java, "http://localhost:8080")
+        petClient = Feign.builder().encoder(JacksonEncoder()).decoder(JacksonDecoder()).target(IPetClient::class.java,
+            "http://localhost:8080"
+        )
     }
 
     private fun givenPetRequest() {
