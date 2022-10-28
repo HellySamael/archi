@@ -39,6 +39,9 @@ subprojects {
 
         // Use the Kotlin JUnit integration.
         testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+        testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
+        testImplementation("org.assertj:assertj-core:3.23.1")
     }
 }
 
