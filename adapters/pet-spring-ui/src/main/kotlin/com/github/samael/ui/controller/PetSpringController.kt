@@ -26,7 +26,7 @@ class PetSpringController : IPetUi<ResponseEntity<Any>> {
         runApplication<PetSpringApplication>()
     }
 
-    @PostMapping("/hello")
+    @PostMapping("/pet")
     override fun create(@RequestBody pet: Pet): ResponseEntity<Any> {
         val petDomain = SingletonEnvironmentContext.getPetDomain()
         val petCreated = petDomain.create(pet)

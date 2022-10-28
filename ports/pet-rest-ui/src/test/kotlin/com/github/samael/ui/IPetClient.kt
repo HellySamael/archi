@@ -7,7 +7,7 @@ import feign.Response
 
 
 interface IPetClient {
-        @RequestLine("POST /hello")
+        @RequestLine("POST /pet")
         @Headers("Content-Type: application/json")
         fun create(pet: Pet): Response
 }

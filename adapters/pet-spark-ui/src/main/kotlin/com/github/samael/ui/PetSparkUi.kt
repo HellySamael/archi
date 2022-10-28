@@ -21,7 +21,7 @@ class PetSparkUi : IPetUi<Any> {
     fun start(){
         println("will start spark")
         port(8080)
-        post("/hello") { req, res ->
+        post("/pet") { req, res ->
             println("rentre")
                 val body:String = req.body()
                 val petRequest: Pet = objectMapper.readValue(body)
