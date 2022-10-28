@@ -10,7 +10,7 @@ import com.github.samael.ui.IPetUi
 import com.github.samael.ui.SingletonEnvironmentContext
 import spark.Spark.*
 
-class PetSparkUi : IPetUi<Pet> {
+class PetSparkUi : IPetUi<Any> {
 
 
     private val objectMapper: ObjectMapper
@@ -21,7 +21,8 @@ class PetSparkUi : IPetUi<Pet> {
     fun start(){
         println("will start spark")
         port(8080)
-        get("/hello") { req, res ->
+        post("/hello") { req, res ->
+            println("rentre")
                 val body:String = req.body()
                 val petRequest: Pet = objectMapper.readValue(body)
                 val petCreated = this.create(petRequest)

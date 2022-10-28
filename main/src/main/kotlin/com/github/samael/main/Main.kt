@@ -10,7 +10,7 @@ import com.github.samael.ui.controller.PetSpringController
 fun main() {
         val petMemoryStorage = PetMemoryStorage()
         val petDomain = PetDomain(petMemoryStorage)
-        val petUi = PetSpringController()
+        val petUi = PetSparkUi()
         SingletonEnvironmentContext.setPetDomain(petDomain)
         petUi.start()
 
