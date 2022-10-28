@@ -3,7 +3,6 @@ package com.github.samael.ui
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.*
-import com.github.samael.business.IPetDomain
 import com.github.samael.business.core.Pet
 
 import com.github.samael.ui.IPetUi

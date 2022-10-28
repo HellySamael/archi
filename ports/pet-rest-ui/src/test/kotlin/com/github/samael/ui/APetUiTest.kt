@@ -6,7 +6,6 @@ import com.fasterxml.jackson.module.kotlin.readValue
 import com.github.samael.business.IPetDomain
 import com.github.samael.business.core.Pet
 import feign.Feign
-import feign.Logger
 import feign.Response
 import feign.jackson.JacksonDecoder
 import feign.jackson.JacksonEncoder
